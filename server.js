@@ -11,12 +11,14 @@ app.use(bodyParser.json());
 // =============================================================
 
 // Basic route that sends the user first to the AJAX Page
+app.use( express.static( __dirname + '/app' ));
+
 app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "app/public/home.html"));
+  res.sendFile(path.join(__dirname, "/app/public/home.html"));
 });
 
-app.get("/add", function(req, res) {
-  res.sendFile(path.join(__dirname, "add.html"));
+app.get("/survey.html", function(req, res) {
+  res.sendFile(path.join(__dirname, "/app/public/survey.html"));
 });
 
 // Displays all characters
