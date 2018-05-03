@@ -1,0 +1,16 @@
+.jumbotron, .jumbo, .display-4, .lead, .my-4, .links, .surveytitle, .surveyform {
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+};
+
+.lead {
+    font-size: 50px;
+};
+
+.links {
+    font-size: 20px;
+};
+
+.btn {
+    background-color: orange;
+};
